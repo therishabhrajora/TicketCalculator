@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Fare-calculator</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <h1 class="header">FARE CALCULATOR</h1>
+        </div>
+    </header>
+    <main>
+        
+            <div class="printcontainer container">
+                <div class="detailscontainer">
+                    <div class="heading">
+                        <h2>Utter Pradesh Bus Service</h2>
+                    </div>
+                    <div class="startlocation">
+                        <label for="from">From: </label>
+                        <select class="selectfromlocation">
+                            <!-- in js  -->
+                        </select>
+                    </div>
+                    <div class="tolocation">
+                        <label for="to">To: </label>
+                        <select class="selecttolocation">
+                            <!-- in js  -->
+                        </select>
+                    </div>
+                    <div class="passangertype">
+                        <p>Passanger: </p>
+                        <input class="adultFare" type="checkbox" id="adultFare" name="fare" value="adult">
+                        <label class="adultFare" for="adultFare">Adult Fare</label>
+                        <input type="checkbox" id="childFare" name="fare" value="child">
+                        <label for="childFare">Child Fare</label>
+                    </div>
+
+                    <div class="noofticket">
+                        <p>Count: </p>
+                        <div class="countings">
+                            <div class="adultno">
+                                <label for="adultsNumber">Number of Adults:&nbsp;&nbsp;&nbsp;</label>
+                                <input type="number" id="adultsNumber" name="adultsNumber" min="1" max="10" value="0">
+                            </div>
+                            <div class="childno">
+                                <label for="childrenNumber">Number of Children:</label>
+                                <input type="number" id="childrenNumber" name="childrenNumber" min="0" max="10">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="calculatefare">
+                        <button class="farebtn">Calculate Fare</button>
+                        <button class="refreshbtn" onclick="refreshPage()">Refresh</button>
+                    </div>
+                </div>
+                <div class="slipcontainer">
+                    <!-- in js  -->
+                </div>
+            </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
